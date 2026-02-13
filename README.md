@@ -1,19 +1,18 @@
 # 🛡️ Cyber Bullying Detection System
 
-A Machine Learning–based system to detect cyberbullying content from user text.  
-This project helps identify harmful or abusive language using NLP techniques and classification models.
+A Machine Learning–based system to detect cyberbullying content from user text using Natural Language Processing (NLP) and classification algorithms.
 
 ---
 
 ## 📌 Project Overview
 
-Cyberbullying is a growing problem on social media and online platforms.  
-This system analyzes user input text and classifies it as **Bullying** or **Non-Bullying** using Machine Learning.
+Cyberbullying is a serious issue on social media platforms.  
+This project analyzes user-provided text and classifies it as **Bullying** or **Non-Bullying** using Machine Learning techniques.
 
-The project demonstrates:
+This project demonstrates:
 - Natural Language Processing (NLP)
 - Machine Learning model training & prediction
-- REST API–based prediction system
+- REST API development using Flask
 - Clean project structure suitable for real-world applications
 
 ---
@@ -23,17 +22,19 @@ The project demonstrates:
 - Python  
 - Flask  
 - Scikit-learn  
-- Pandas, NumPy  
+- Pandas  
+- NumPy  
 - TF-IDF Vectorizer  
-- Machine Learning (Logistic Regression)  
+- Logistic Regression  
 
 ---
 
 ## 📂 Project Structure
+
 cyber_bullying_detection/
 │
 ├── api/ # Flask API files
-├── src/ # Model training & preprocessing scripts
+├── src/ # Model training & preprocessing
 ├── models/ # Saved ML model & vectorizer
 ├── assets/ # Output screenshots
 ├── dataset/ # Training dataset
@@ -41,40 +42,38 @@ cyber_bullying_detection/
 ├── requirements.txt
 └── README.md
 
+---
 
 ## ⚙️ How the System Works
 
-1. User provides input text
+1. User enters text
 2. Text is cleaned and preprocessed
 3. TF-IDF converts text into numerical features
-4. Trained ML model predicts bullying or non-bullying
-5. Result is returned through an API response
+4. ML model predicts bullying or non-bullying
+5. Result is returned through API
 
+---
 
 ## 🔌 API Usage Example
 
 ### Endpoint
-
 POST /predict
 
 ### Sample Request
-```json
 {
   "text": "You are stupid and useless"
 }
-Sample Responce
+### Sample Response
 {
   "prediction": "Bullying",
   "confidence": 0.87
 }
-
-###📈 Model Performance
+### 📈 Model Performance
 
 Algorithm: Logistic Regression
 Vectorizer: TF-IDF
 Accuracy: ~87%
-Evaluation Metrics: Accuracy, Precision, Recall
-
+Metrics Used: Accuracy, Precision, Recall
 ## 🖼️ Output Screenshots
 
 ### Output 1 – User Input
@@ -94,8 +93,7 @@ Evaluation Metrics: Accuracy, Precision, Recall
 
 ### Output 6 – System Logs
 ![System Logs](assets/output6.png)
-
-###▶️ How to Run the Project
+### ▶️ How to Run the Project
 1️⃣ Clone the Repository
 git clone https://github.com/kandaroopadevi/cyber_bullying_detection.git
 cd cyber_bullying_detection
@@ -104,10 +102,14 @@ pip install -r requirements.txt
 3️⃣ Run the Application
 python api/app.py
 
-###🚀 Future Enhancements
+### 🚀 Future Enhancements
+
 Use deep learning models (LSTM / BERT)
 Support multiple languages
 Deploy on cloud platforms (AWS / Render)
 Real-time social media content analysis
 
+### 👩‍💻 Author
 
+Kanda Roopa Devi
+B.Tech – Computer Science and Engineering
