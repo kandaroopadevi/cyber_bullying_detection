@@ -1,98 +1,112 @@
-# Cyberbullying Detection System 
+# 🛡️ Cyber Bullying Detection System
 
-A machine learning–based web application that detects cyberbullying in user-submitted text and enforces automated moderation using warnings, user blocking, and reporting.
+A Machine Learning–based system to detect cyberbullying content from user text.  
+This project helps identify harmful or abusive language using NLP techniques and classification models.
 
-##  Project Overview
+---
 
-The Cyberbullying Detection System analyzes online comments in real time using Natural Language Processing (NLP) and a trained Logistic Regression model. It identifies abusive content, tracks user offenses, blocks repeat offenders, and generates downloadable PDF reports for administrators.
+## 📌 Project Overview
 
-## Features
+Cyberbullying is a growing problem on social media and online platforms.  
+This system analyzes user input text and classifies it as **Bullying** or **Non-Bullying** using Machine Learning.
 
-- Real-time cyberbullying detection  
-- NLP preprocessing with TF-IDF vectorization  
-- 3-strike warning and auto-blocking system  
-- User offense tracking using JSON storage  
-- Admin dashboard with statistics  
-- PDF report generation  
-- Lightweight FastAPI backend  
+The project demonstrates:
+- Natural Language Processing (NLP)
+- Machine Learning model training & prediction
+- REST API–based prediction system
+- Clean project structure suitable for real-world applications
 
-## Technologies Used
+---
 
-- **Programming Language: Python  
-- **Framework: FastAPI  
-- **Machine Learning:  Scikit-learn (Logistic Regression)  
-- **NLP:  TF-IDF Vectorizer  
-- **Frontend:  HTML, CSS, JavaScript  
-- **Data Storage:  JSON files  
-- **Report Generation:  ReportLab  
+## 🧠 Technologies Used
 
-##  Project Structure
+- Python  
+- Flask  
+- Scikit-learn  
+- Pandas, NumPy  
+- TF-IDF Vectorizer  
+- Machine Learning (Logistic Regression)  
 
+---
+
+## 📂 Project Structure
 cyber_bullying_detection/
 │
-├── api/
-│   └── app.py
-│
-├── src/
-│   ├── train_model.py
-│   ├── predict.py
-│   ├── features.py
-│   ├── data_utils.py
-│   ├── evaluate.py
-│   └── __init__.py
-│
-├── models/
-│   ├── model.joblib
-│   └── vectorizer.joblib
-│
-├── data/
-│   └── sample_dataset.json
-│
+├── api/ # Flask API files
+├── src/ # Model training & preprocessing scripts
+├── models/ # Saved ML model & vectorizer
+├── assets/ # Output screenshots
+├── dataset/ # Training dataset
+├── .gitignore
 ├── requirements.txt
-├── README.md
-└── .gitignore
+└── README.md
 
 
-## How It Works
+## ⚙️ How the System Works
 
-1. User submits a text comment  
-2. Text is cleaned and vectorized using NLP  
-3. ML model predicts bullying or safe content  
-4. Warnings are issued for violations  
-5. User is blocked after 3 offenses  
-6. Reports are logged and exported as PDF 
- 
+1. User provides input text
+2. Text is cleaned and preprocessed
+3. TF-IDF converts text into numerical features
+4. Trained ML model predicts bullying or non-bullying
+5. Result is returned through an API response
 
-##  How to Run the Project
 
-1. Clone the repository from **:contentReference[oaicite:0]{index=0}**
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-3.Start the FastAPI server:
-	uvicorn api.app:app --reload
-4.Open browser and visit:
+## 🔌 API Usage Example
 
-http://127.0.0.1:8000/docs
+### Endpoint
 
-## Screenshots
+POST /predict
 
-### Output 1
-![Output 1](assets/output1.png)
+### Sample Request
+```json
+{
+  "text": "You are stupid and useless"
+}
+### Sample Response
+{
+  "prediction": "Bullying",
+  "confidence": 0.87
+}
 
-### Output 2
-![Output 2](assets/output2.png)
+###📈 Model Performance
 
-### Output 3
-![Output 3](assets/output3.png)
+Algorithm: Logistic Regression
+Vectorizer: TF-IDF
+Accuracy: ~87%
+Evaluation Metrics: Accuracy, Precision, Recall
+###🖼️ Output Screenshots
+## 🖼️ Output Screenshots
 
-### Output 4
-![Output 4](assets/output4.png)
+### Output 1 – User Input
+![User Input](assets/output1.png)
 
-### Output 5
-![Output 5](assets/output5.png)
+### Output 2 – Text Preprocessing
+![Text Preprocessing](assets/output2.png)
 
-### Output 6
-![Output 6](assets/output6.png)
+### Output 3 – Prediction Result
+![Prediction Result](assets/output3.png)
 
+### Output 4 – Bullying Detection Alert
+![Alert](assets/output4.png)
+
+### Output 5 – Model Evaluation
+![Evaluation](assets/output5.png)
+
+### Output 6 – System Logs
+![System Logs](assets/output6.png)
+
+###▶️ How to Run the Project
+1️⃣ Clone the Repository
+git clone https://github.com/kandaroopadevi/cyber_bullying_detection.git
+cd cyber_bullying_detection
+2️⃣ Install Dependencies
+pip install -r requirements.txt
+3️⃣ Run the Application
+python api/app.py
+
+###🚀 Future Enhancements
+Use deep learning models (LSTM / BERT)
+Support multiple languages
+Deploy on cloud platforms (AWS / Render)
+Real-time social media content analysis
 
