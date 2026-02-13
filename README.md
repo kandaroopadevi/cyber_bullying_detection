@@ -62,7 +62,7 @@ POST /predict
 {
   "text": "You are stupid and useless"
 }
-### Sample Response
+Sample Responce
 {
   "prediction": "Bullying",
   "confidence": 0.87
@@ -74,7 +74,7 @@ Algorithm: Logistic Regression
 Vectorizer: TF-IDF
 Accuracy: ~87%
 Evaluation Metrics: Accuracy, Precision, Recall
-###🖼️ Output Screenshots
+
 ## 🖼️ Output Screenshots
 
 ### Output 1 – User Input
@@ -109,4 +109,5 @@ Use deep learning models (LSTM / BERT)
 Support multiple languages
 Deploy on cloud platforms (AWS / Render)
 Real-time social media content analysis
+
 
