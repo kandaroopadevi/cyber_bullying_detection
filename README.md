@@ -1,10 +1,10 @@
-# 🛡️ Cyber Bullying Detection System
+#  Cyber Bullying Detection System
 
 A Machine Learning–based system to detect cyberbullying content from user text using Natural Language Processing (NLP) and classification algorithms.
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 Cyberbullying is a serious issue on social media platforms.  
 This project analyzes user-provided text and classifies it as **Bullying** or **Non-Bullying** using Machine Learning techniques.
@@ -17,7 +17,7 @@ This project demonstrates:
 
 ---
 
-## 🧠 Technologies Used
+##  Technologies Used
 
 - Python  
 - Flask  
@@ -29,7 +29,7 @@ This project demonstrates:
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 cyber_bullying_detection/
 │
@@ -44,7 +44,7 @@ cyber_bullying_detection/
 
 ---
 
-## ⚙️ How the System Works
+##  How the System Works
 
 1. User enters text
 2. Text is cleaned and preprocessed
@@ -54,7 +54,7 @@ cyber_bullying_detection/
 
 ---
 
-## 🔌 API Usage Example
+##  API Usage Example
 
 ### Endpoint
 POST /predict
@@ -68,7 +68,7 @@ POST /predict
   "prediction": "Bullying",
   "confidence": 0.87
 }
-### 📈 Model Performance
+###  Model Performance
 
 Algorithm: Logistic Regression
 
@@ -78,7 +78,7 @@ Accuracy: ~87%
 
 Metrics Used: Accuracy, Precision, Recall
 
-## 🖼️ Output Screenshots
+## Output Screenshots
 
 ### Output 1 – User Input
 ![User Input](assets/output1.png)
@@ -97,22 +97,22 @@ Metrics Used: Accuracy, Precision, Recall
 
 ### Output 6 – System Logs
 ![System Logs](assets/output6.png)
-### ▶️ How to Run the Project
-1️⃣ Clone the Repository
+###  How to Run the Project
+1. Clone the Repository
 
 git clone https://github.com/kandaroopadevi/cyber_bullying_detection.git
 
 cd cyber_bullying_detection
 
-2️⃣ Install Dependencies
+2️. Install Dependencies
 
 pip install -r requirements.txt
 
-3️⃣ Run the Application
+3️. Run the Application
 
 python api/app.py
 
-### 🚀 Future Enhancements
+###  Future Enhancements
 
 Use deep learning models (LSTM / BERT)
 
@@ -122,8 +122,9 @@ Deploy on cloud platforms (AWS / Render)
 
 Real-time social media content analysis
 
-### 👩‍💻 Author
+###  Author
 
 Kanda Roopa Devi
 B.Tech – Computer Science and Engineering
+
 
