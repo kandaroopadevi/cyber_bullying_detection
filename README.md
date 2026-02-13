@@ -71,9 +71,13 @@ POST /predict
 ### 📈 Model Performance
 
 Algorithm: Logistic Regression
+
 Vectorizer: TF-IDF
+
 Accuracy: ~87%
+
 Metrics Used: Accuracy, Precision, Recall
+
 ## 🖼️ Output Screenshots
 
 ### Output 1 – User Input
@@ -95,21 +99,31 @@ Metrics Used: Accuracy, Precision, Recall
 ![System Logs](assets/output6.png)
 ### ▶️ How to Run the Project
 1️⃣ Clone the Repository
+
 git clone https://github.com/kandaroopadevi/cyber_bullying_detection.git
+
 cd cyber_bullying_detection
+
 2️⃣ Install Dependencies
+
 pip install -r requirements.txt
+
 3️⃣ Run the Application
+
 python api/app.py
 
 ### 🚀 Future Enhancements
 
 Use deep learning models (LSTM / BERT)
+
 Support multiple languages
+
 Deploy on cloud platforms (AWS / Render)
+
 Real-time social media content analysis
 
 ### 👩‍💻 Author
 
 Kanda Roopa Devi
 B.Tech – Computer Science and Engineering
+
