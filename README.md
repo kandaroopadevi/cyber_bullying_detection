@@ -110,7 +110,7 @@ pip install -r requirements.txt
 
 3️. Run the Application
 
-python api/app.py
+uvicorn api.app:app --reload
 
 ###  Future Enhancements
 
@@ -127,6 +127,7 @@ Real-time social media content analysis
 Kanda Roopa Devi
 
 B.Tech – Computer Science and Engineering
+
 
 
 
